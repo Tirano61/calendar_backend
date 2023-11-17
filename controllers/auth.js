@@ -1,5 +1,5 @@
 const { response } = require('express');
-const { validationResult } = require('express-validator');
+
 const bcrypt = require('bcryptjs');
 const Usuario = require('../models/Usuario');
 const { generarJWT } = require('../helpers/jwt')
@@ -17,7 +17,6 @@ const crearUsuario = async (req, res = response) => {
       });
     }
    
-    
     usuario = new Usuario(req.body);
 
     //Encriptar contraseña
