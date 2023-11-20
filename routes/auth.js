@@ -11,7 +11,6 @@ const { validarCampos } = require('../middlewares/validar-campos');
 const { validrJWT } = require('../middlewares/validar-jwt');
 ;
 
-
 router.post(
   '/new',
   [ 
