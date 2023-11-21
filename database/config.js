@@ -23,3 +23,5 @@ const dbConnection = async() => {
 module.exports = {
   dbConnection,
 }
+
+--location=global
